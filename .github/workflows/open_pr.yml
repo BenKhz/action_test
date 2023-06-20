@@ -23,6 +23,6 @@ jobs:
             - name: 🔨 Build the this bad boy.
               run: |
                 echo "Building..."
-            - name: 🔨 Build the this bad boy.
+            - name: 🔨 Deploy to Dev instance.
               run: |
-                echo "Building..."
+                echo "Deploying..."
