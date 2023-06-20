@@ -1,0 +1,16 @@
+{
+  "name": "app-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: NO TESTS IN APP-2\" && exit 0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "api": "workspace:^",
+    "validation": "workspace:^"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "app-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"NO TEST IN APP-1\" && exit 0"
+  },
+  "author": "",
+  "license": "ISC"
+}

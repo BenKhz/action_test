@@ -1,0 +1,4 @@
+# Define what is part of a workspace
+packages:
+  - "apps/**"
+  - "packages/**"
