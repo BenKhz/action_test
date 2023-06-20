@@ -15,7 +15,7 @@ jobs:
 
             - name: 🔨 Install dependencies
               run: |
-                npm install pnpm
+                npm install -g pnpm 
                 pnpm install
             - name: 🔨 Run Tests
               run: |
