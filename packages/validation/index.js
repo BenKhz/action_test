@@ -3,4 +3,4 @@ const validators = {
     hasNums: (inp) => /[0-9]./g.test(inp),
 }
 
-export default validators
+module.exports = validators
