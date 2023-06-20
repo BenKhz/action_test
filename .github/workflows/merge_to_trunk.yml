@@ -1,0 +1,33 @@
+# Open a PR into main from another branch
+on:
+    workflow_dispatch:
+    push:
+      branches:
+      - main
+
+jobs:
+    build:
+        # The type of runner that the job will run on
+        runs-on: ubuntu-latest
+        steps:
+            # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+            - uses: actions/checkout@v2
+
+            - name: 🔨 Install dependencies
+              run: |
+                npm install -g pnpm 
+                pnpm install
+            - name: 🔨 Run Tests
+              run: |
+                pnpm -r run test
+            - name: 🔨 Build the this bad boy.
+              run: |
+                echo "Building..."
+
+            - name: 🔨 Deploy to Test CDN.
+              run: |
+                echo "Deploying..."
+
+            - name: 🔨 Publish Platform Records.
+              run: |
+                echo "Publishing to platform..."
